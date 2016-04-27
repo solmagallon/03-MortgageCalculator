@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title> Mortgage Calculator </title>
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src = "index.js"></script>
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css' />
+
+</head>
+
+<body>
+
+<h1></h1>
+<div id="fb-root"></div>
+<div id="wrapper">
+<!-- Header -->
+<div id="header">
+<h5>Sol Magallon <br>03-Mortgage Calculator </h5>
+<img class="logo" alt="" src="img/mortgage2.jpg" style="width:100px;height:100px;"/> </div>
+
+<div class="info">
+<h2> Mortgage Calculator</h2>
+<p>This is a mortgage calculator written with jQuery.</p>
+
+<h3>
+<body>
+<header id="header">Mortgage Calculator</header>
+<hr>
+<ul id="list" style="list-style-type: none">
+<li>Loan Balance</li>
+<input type="number" id="balance"></input>
+<li>Interest Rate (%)</li>
+<input type="number" id="rate"></input>
+<li>Loan Term (years)</li>
+<input type="number" id="term"></input>
+<li>Period</li>
+<select id="select">
+<option value="12">Monthly</option>
+<option value="24">Bi-monthly</option>
+</select>
+</ul>
+<button type="submit" id="button" onclick="calculate()">Calculate</button>
+<p id="finalCalc"></p>
+</h3>
+</body>
+
+</html>
